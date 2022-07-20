@@ -15,8 +15,8 @@ return(
         <h2> count ippo vanthu  {count}</h2>
 
   </header>
-<button onClick={()=>setCount(count+1)}>Increase button</button>
-<button onClick={()=>setCount(count-1)}>decrease button</button>
+<button onClick={()=>(count<=0?"":setCount(count-1))}>decrease button</button>
+<button onClick={()=>(count>=10?"":setCount(count+1))}>increase button</button>
 <button onClick={()=>setCount(count*0)}>Reset button</button>
 
 
